@@ -10,7 +10,7 @@ int main(int argc, char* argv[])
     }
     std::fstream file(argv[1], std::ios::in | std::ios::out | std::ios::binary);
     if (!file) {
-        printf("Failed to open file.\n");
+        printf("Failed to open file. Try run as admin.\n");
         system("pause");
         return 1;
     }
